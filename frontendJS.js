@@ -11,10 +11,10 @@ window.onload = function() {
     function setLanguage() {
         selectedLanguage = language.value;
         if (selectedLanguage == "arabic") {
-            link.setAttribute('href', '../public/style arabic.css');
+            link.setAttribute('href', 'style arabic.css');
         }
         else{
-            link.setAttribute('href', '../public/style.css');
+            link.setAttribute('href', 'style.css');
         }
         localStorage.setItem("language", selectedLanguage);
 
@@ -26,7 +26,7 @@ window.onload = function() {
 
     function likeArticle(e) {
         displayValue += 1;
-        like_button.innerHTML = '<img src="../public/like-plus.png" alt="like">'+displayValue.toString();
+        like_button.innerHTML = '<img src="like-plus.png" alt="like">'+displayValue.toString();
     
         // Send AJAX PUT request to update article like count on server
         const articleId = e.currentTarget.getAttribute('data-article-id');
@@ -156,10 +156,10 @@ document.addEventListener("DOMContentLoaded", function() {
     var savedLanguage = localStorage.getItem("language") || "english";
     language.value = savedLanguage;
     if (savedLanguage == "arabic") {
-        link.setAttribute('href', '../public/style arabic.css');
+        link.setAttribute('href', 'style arabic.css');
     }
     else{
-        link.setAttribute('href', '../public/style.css');
+        link.setAttribute('href', 'style.css');
     }
 });
 
