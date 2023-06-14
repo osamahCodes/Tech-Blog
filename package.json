@@ -1,0 +1,25 @@
+{
+  "name": "swe363_hw4",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "cookie-parser": "^1.4.6",
+    "dompurify": "^3.0.2",
+    "express": "^4.18.2",
+    "express-fileupload": "^1.4.0",
+    "froala-editor": "^4.0.18",
+    "html-escaper": "^3.0.3",
+    "multer": "^1.4.5-lts.1",
+    "nunjucks": "^3.2.4",
+    "wysiwyg-editor-node-sdk": "^4.0.18"
+  }
+}

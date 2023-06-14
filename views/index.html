@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+{% block title %}Home{% endblock %}
+{% block content %}
+<link rel="stylesheet" href="../public/style.css" id="stylesheet">
+    <header>
+        <img src="../public/hero.png" alt="hero">
+        <div class="welcome">
+            <h2 class="welcome_mobile">Welcome to The <button id="tech"><a href="/"> Tech Blog</a> </button>...</h2>
+            <h2>The best place to share your knowledge and make the world better</h2>
+            <button id="create_an_article"><a href="/new">Create an Article</a></button>
+        </div>
+    </header>
+    <div class="title">
+        <h1>All Technical Articles</h1>
+    </div>
+    {% for article in articles %}
+        <div class="card">
+            <section class="icons">
+                <img src="../public/editor-icons-2.png" alt="editor">
+                <p>{{ article.author }}</p>
+                <img src="../public/heart-suit.png" alt="heart">
+                <p>{{ article.likes }}</p>
+            </section>
+            <section class="about_article">
+                <h2>{{ article.title }}</h2>
+                <p>{{ article.description }}</p>
+                <div class="article_buttons"><button id="read_now"><a href="/articles/{{ article.id }}">Read Now</a></button> <button id="edit"><a href="/edit/{{ article.id }}">Edit</a></button> <button id="delete" data-article-id="{{ article.id }}"><a id="delete-anchor">Delete</a></button></div>
+            </section>
+        </div>
+    {% endfor %}
+    
+{% endblock %}

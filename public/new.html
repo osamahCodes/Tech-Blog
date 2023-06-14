@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" id="stylesheet">
+    <script type="text/javascript" src="frontendJS.js"></script>
+    <script type='text/javascript' src='https://cdn.jsdelivr.net/npm/froala-editor@latest/js/froala_editor.pkgd.min.js'></script>
+
+    <link href='https://cdn.jsdelivr.net/npm/froala-editor@latest/css/froala_editor.pkgd.min.css' rel='stylesheet' type='text/css' />
+    <title>new</title>
+
+</head>
+<body>
+    
+    <nav>
+        <div class="nav_buttons">
+            <button id="tech"><a href="index.html"> Tech Blog</a> </button>
+            <select name="languages" id="lang">
+                <option value="english">English </option>
+                <option value="arabic">Arabic </option>
+            </select>
+        </div>
+    </nav>
+    <div class="create">
+        <div class="title">
+            <h1>Create an article</h1>
+        </div>
+        <form action="index.html" onsubmit="">
+            <label for="title">Title</label>
+            <input type="text" id="title" required></input><br><br>
+            <label for="Author">Author</label>
+            <input type="text" id="Author" value="Admin" required></input><br><br>
+            <label for="Description">Description</label>
+            <textarea type="text" id="Description" rows="2" required></textarea><br><br>
+            <label for="Content">Content</label>
+            <textarea type="text" id="Content" cols="20" rows="10"></textarea><br><br>
+            <!-- <div id="editor">
+
+            </div> -->
+            <label for="Content">Arabic Content</label>
+            <textarea type="text" id="Content" cols="20" rows="10"></textarea><br><br>
+            <!-- <div id="editor">
+
+            </div> -->
+            <button>Create</button>
+        </form>
+    </div>    
+    <footer>
+        <div class="copyrights">© The <button id="tech"><a href="index.html"> Tech Blog</a> </button> 2023 Created by 222-SWE-363 Student</div>
+    </footer>
+</body>
+</html>

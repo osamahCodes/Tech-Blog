@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../public/style.css" id="stylesheet">
+    <script type="text/javascript" src="../public/frontendJS.js"></script>
+    <script type='text/javascript' src='https://cdn.jsdelivr.net/npm/froala-editor@latest/js/froala_editor.pkgd.min.js'></script>
+    <link href='https://cdn.jsdelivr.net/npm/froala-editor@latest/css/froala_editor.pkgd.min.css' rel='stylesheet' type='text/css' />
+    <title>{% block title %}{% endblock %}</title>
+</head>
+<body>
+    
+    <nav>
+        <div class="nav_buttons">
+            <button id="tech"><a href="/"> Tech Blog</a> </button>
+            <select name="languages" id="lang">
+                <option value="english">English </option>
+                <option value="arabic">Arabic </option>
+            </select>
+        </div>
+    </nav>
+    {% block content %}{% endblock %}
+    <footer>
+        <div class="copyrights">© The <button id="tech"><a href="/"> Tech Blog</a> </button> 2023 Created by 222-SWE-363 Student</div>
+    </footer>
+    
+</body>
+</html>

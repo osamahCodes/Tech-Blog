@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block title %} article {% endblock %}
+{% block content %}    
+<link rel="stylesheet" href="../public/style.css" id="stylesheet">
+<input type="hidden" name="article_id" value="{{ article.id }}">
+    <div class="article">
+        <h1>{{ article.title }}</h1><br>
+        <h3>written by: {{ article.author }}</h3><br>
+        <h2 style="color: #6d64ff;">{{ article.description }}</h2><br>
+        {{ article.content |urlize| safe}}  
+    </div>
+    <button id="like_plus" data-article-id="{{ article.id }}"><img src="../public/like-plus.png" alt="like" data-article-id="{{ article.id }}">{{ article.likes }}</button>
+{% endblock %}
+
